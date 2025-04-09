@@ -273,7 +273,7 @@ welcomePersonToFES('John' , 'Doe')
  * ['FAIL'] => []
  */
 
-let grades = ['A+', 'A', 'FAIL']
+//let grades = ['A+', 'A', 'FAIL']
 //let grades = ['FAIL', 'FAIL', 'B']
 //let grades = ['FAIL']
 
@@ -289,7 +289,41 @@ let grades = ['A+', 'A', 'FAIL']
 
 //   SHORT WAY
 
-let goodGrades = grades.filter(element => element !== 'FAIL'
-)
+//let goodGrades = grades.filter(element => element !== 'FAIL'
+//)
 
-console.log(goodGrades)
+//console.log(goodGrades)
+
+/**
+ * Filter out all the 'FAIL' elements in an array
+ * without using the Array.filter method
+ * 
+ * @examples
+ * ['A+', 'A', 'FAIL'] => ['A+', 'A']
+ * ['FAIL', 'FAIL', 'B'] => ['B']
+ * ['FAIL'] => []
+ */
+
+//let grades = ['A+', 'A', 'FAIL']
+//let grades = ['FAIL', 'FAIL', 'B']
+//let grades = ['FAIL']
+
+//let grades = ['A+', 'A', 'FAIL']
+//let grades = ['FAIL', 'FAIL', 'B']
+//let grades = ['FAIL']
+
+//   CREATE A NEW EMPTY ARRAY CALLED 'goodGrades'
+// let goodGrades = []
+// for (let i = 0; i < grades.length; ++i) {
+     // add the current element onto 'goodGrades' only if
+     // the current element is not equal to 'FAIL'
+     // if (grades[i] !== 'FAIL') {
+          // goodGrades.push(grades[i])
+     // }
+     //current element
+     //console.log(grades[i])
+// }
+
+//console log 'goodGrades'
+// console.log(goodGrades)
+
