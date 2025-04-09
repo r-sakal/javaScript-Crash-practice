@@ -279,17 +279,17 @@ let grades = ['A+', 'A', 'FAIL']
 
 //   LONG WAY
 
-//let newArr = grades.filter((element) => {
+//let goodGrades = grades.filter((element) => {
   //   console.log(element)
   // if (element !== 'FAIL')
   //   return true;
 //})
 
-//console.log(newArr)
+//console.log(goodGrades)
 
 //   SHORT WAY
 
-let newArr = grades.filter(element => element !== 'FAIL'
+let goodGrades = grades.filter(element => element !== 'FAIL'
 )
 
-console.log(newArr)
+console.log(goodGrades)
