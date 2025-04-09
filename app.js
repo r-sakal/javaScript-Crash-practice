@@ -327,3 +327,48 @@ welcomePersonToFES('John' , 'Doe')
 //console log 'goodGrades'
 // console.log(goodGrades)
 
+/**
+ *        ARRAY MAP
+ *        changes you're elements into something 
+ *        else defined by the return function
+ * 
+ */
+
+// let arr = [1, 4, 9, 16]
+
+// let newArray = arr.map((element) => {
+//      console.log(element)
+//      return 1;
+// })
+
+// console.log(newArray)
+
+//  we can reduce into one line of code as previously done 
+
+// let newArray = arr.map(element => 'dog')
+
+// console.log(newArray)
+
+
+/**       EXERSISE
+ * 
+ * Turn each element in an array of dollars into cents
+ * 
+ * @examples
+ * [1, 5, 10, 3] => [100, 500, 1000, 300]
+ * [0, 10, 20] => [0, 1000, 2000]
+ */
+
+let dollars = [1, 5, 10, 3];
+// let dollars = [0, 10, 20];
+
+// let cents = dollars.map((element) => {
+//      console.log(element)
+//      return (element * 100)
+// })
+
+// console.log(cents)
+
+let cents = dollars.map(element => element * 100)
+
+console.log(cents)
