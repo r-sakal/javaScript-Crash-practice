@@ -393,3 +393,94 @@ welcomePersonToFES('John' , 'Doe')
 // }
 
 // console.log(cents);
+
+/**
+ *             OBJECTS
+ */
+
+// let userFirstName = 'Robert'
+// let userLastName = 'Sakal'
+// let userDiscordId = 'rsakal'
+// let userSubscriptionStatus = 'VIP'
+
+// let user = {
+//      username: 'Robert',
+//      email: 'rob.sakal@gmail.com',
+//      password: 'test123',
+//      subscrptionStatus: 'VIP',
+//      discordId: 'rsakal',
+//      lessonsCompleted: [0, 1],
+// }
+
+// console.log(user.username [0]);
+
+// console.log(user.subscrptionStatus);
+
+// console.log( user.lessonsCompleted.map(elem => elem * 2));
+
+/**
+ *        Make it into an array in order to store many objects in one area
+ *        add [] arround whole code then for the next object simply add a comma 
+ *        and another {} after the first object before the closing brackets
+*/
+
+let users = [
+     {
+     username: 'Robert',
+     email: 'robert@frontendsimplified.com',
+     password: 'test123',
+     subscrptionStatus: 'VIP',
+     discordId: 'Robert#0001',
+     lessonsCompleted: [0, 1],
+},
+     {
+     username: 'David',
+     email: 'david@frontendsimplified.com',
+     password: 'david123',
+     subscrptionStatus: 'VIP',
+     discordId: 'David Bragg#0001',
+     lessonsCompleted: [0, 1],
+},
+     {
+     username: 'Mitri',
+     email: 'mitri@frontendsimplified.com',
+     password: 'mitri123',
+     subscrptionStatus: 'VIP',
+     discordId: 'Mitri#0001',
+     lessonsCompleted: [0, 1, 2, 3],
+},
+];
+
+function login(email, password) {
+     for (let i = 0; i < users.length; ++i) {
+          if (users[i].email === email) {
+               console.log(users[i]);
+               if (users[i].password === password) {
+                    console.log('log the user in - the details are correct')
+               }
+               else {
+                    console.log('password is incorrect - try again')
+               }
+               return;
+          }
+     }
+     console.log('could not find an email that matches')
+}
+
+login('thisdoesntexist@frontendsimplified.com', 'wrong password')
+
+
+
+/**
+ * Create a register function that accepts:
+ * -username
+ * -email
+ * -password
+ * -subscriptionStatus
+ * -discordId
+ * -lessonCompleted
+ * 
+ * Inside your register function:
+ * 1. Create a user object
+ * 2. Push this user object onto the 'users' array
+ */
