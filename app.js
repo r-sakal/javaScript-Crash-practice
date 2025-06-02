@@ -150,9 +150,9 @@ for (let i = 1; i <= 20; i++) {
 }
 */
 
-/** Print out every character from the string: 
+/** Print out every character from the string:
  * "Frontend Simplified"
- * 
+ *
  * @example
  * 'F'
  * 'r'
@@ -160,13 +160,12 @@ for (let i = 1; i <= 20; i++) {
  * ...
  * 'e'
  * 'd'
-*/
+ */
 
 // const str = 'Frontend Simplified'
 // for (let i = 0; i < str.length; i++) {
-     // console.log(str[i])
+// console.log(str[i])
 // }
-
 
 /*
 
@@ -190,14 +189,13 @@ welcomePersonToFES('John' , 'Doe')
 
 // console.log(sumOfTwoNumbers(10, 10));
 
-
 //        Question 1
 /** Create a function that converts Celsius to Fahrenheit
- * 
+ *
  * Celsius to Fahrenheit formula:
  *    F = C * 1.8 + 32
- * 
- * 
+ *
+ *
  * @example
  * convertCelsiusToFahrenheit(0) -> 32
  * convertCelsiusToFahrenheit(10) -> 50
@@ -206,8 +204,8 @@ welcomePersonToFES('John' , 'Doe')
 
 // function convertCelsiusToFahrenheit(celsius) {
 //      return celsius * 1.8 + 32
-     
-// } 
+
+// }
 // console.log(convertCelsiusToFahrenheit(30))
 
 // /* Same function but with const and arrow function as well */
@@ -248,10 +246,10 @@ welcomePersonToFES('John' , 'Doe')
 
 //   How to filter out elements for example how to filter out elements less than 50
 //let newArr = arr.filter((element) => {
-  //   console.log(element)
-  //   if (element < 50) {
-  //        return true;
-  //   }
+//   console.log(element)
+//   if (element < 50) {
+//        return true;
+//   }
 //})
 
 //console.log(newArr)
@@ -263,10 +261,9 @@ welcomePersonToFES('John' , 'Doe')
 
 //console.log(newArr)
 
-
 /**
  * Filter out all the 'FAIL' elements in an array
- * 
+ *
  * @examples
  * ['A+', 'A', 'FAIL'] => ['A+', 'A']
  * ['FAIL', 'FAIL', 'B'] => ['B']
@@ -280,9 +277,9 @@ welcomePersonToFES('John' , 'Doe')
 //   LONG WAY
 
 //let goodGrades = grades.filter((element) => {
-  //   console.log(element)
-  // if (element !== 'FAIL')
-  //   return true;
+//   console.log(element)
+// if (element !== 'FAIL')
+//   return true;
 //})
 
 //console.log(goodGrades)
@@ -297,7 +294,7 @@ welcomePersonToFES('John' , 'Doe')
 /**
  * Filter out all the 'FAIL' elements in an array
  * without using the Array.filter method
- * 
+ *
  * @examples
  * ['A+', 'A', 'FAIL'] => ['A+', 'A']
  * ['FAIL', 'FAIL', 'B'] => ['B']
@@ -315,13 +312,13 @@ welcomePersonToFES('John' , 'Doe')
 //   CREATE A NEW EMPTY ARRAY CALLED 'goodGrades'
 // let goodGrades = []
 // for (let i = 0; i < grades.length; ++i) {
-     // add the current element onto 'goodGrades' only if
-     // the current element is not equal to 'FAIL'
-     // if (grades[i] !== 'FAIL') {
-          // goodGrades.push(grades[i])
-     // }
-     //current element
-     //console.log(grades[i])
+// add the current element onto 'goodGrades' only if
+// the current element is not equal to 'FAIL'
+// if (grades[i] !== 'FAIL') {
+// goodGrades.push(grades[i])
+// }
+//current element
+//console.log(grades[i])
 // }
 
 //console log 'goodGrades'
@@ -329,9 +326,9 @@ welcomePersonToFES('John' , 'Doe')
 
 /**
  *        ARRAY MAP
- *        changes you're elements into something 
+ *        changes you're elements into something
  *        else defined by the return function
- * 
+ *
  */
 
 // let arr = [1, 4, 9, 16]
@@ -343,17 +340,16 @@ welcomePersonToFES('John' , 'Doe')
 
 // console.log(newArray)
 
-//  we can reduce into one line of code as previously done 
+//  we can reduce into one line of code as previously done
 
 // let newArray = arr.map(element => 'dog')
 
 // console.log(newArray)
 
-
 /**       EXERSISE
- * 
+ *
  * Turn each element in an array of dollars into cents
- * 
+ *
  * @examples
  * [1, 5, 10, 3] => [100, 500, 1000, 300]
  * [0, 10, 20] => [0, 1000, 2000]
@@ -389,7 +385,7 @@ welcomePersonToFES('John' , 'Doe')
 
 // let cents = [];
 // for (let i = 0; i < dollars.length; ++i) {
-          // cents.push(dollars[i] * 100)
+// cents.push(dollars[i] * 100)
 // }
 
 // console.log(cents);
@@ -420,56 +416,53 @@ welcomePersonToFES('John' , 'Doe')
 
 /**
  *        Make it into an array in order to store many objects in one area
- *        add [] arround whole code then for the next object simply add a comma 
+ *        add [] arround whole code then for the next object simply add a comma
  *        and another {} after the first object before the closing brackets
-*/
+ */
 
 let users = [
-     {
-     username: 'Robert',
-     email: 'robert@frontendsimplified.com',
-     password: 'test123',
-     subscrptionStatus: 'VIP',
-     discordId: 'Robert#0001',
-     lessonsCompleted: [0, 1],
-},
-     {
-     username: 'David',
-     email: 'david@frontendsimplified.com',
-     password: 'david123',
-     subscrptionStatus: 'VIP',
-     discordId: 'David Bragg#0001',
-     lessonsCompleted: [0, 1],
-},
-     {
-     username: 'Mitri',
-     email: 'mitri@frontendsimplified.com',
-     password: 'mitri123',
-     subscrptionStatus: 'VIP',
-     discordId: 'Mitri#0001',
-     lessonsCompleted: [0, 1, 2, 3],
-},
+  {
+    username: "Robert",
+    email: "robert@frontendsimplified.com",
+    password: "test123",
+    subscrptionStatus: "VIP",
+    discordId: "Robert#0001",
+    lessonsCompleted: [0, 1],
+  },
+  {
+    username: "David",
+    email: "david@frontendsimplified.com",
+    password: "david123",
+    subscrptionStatus: "VIP",
+    discordId: "David Bragg#0001",
+    lessonsCompleted: [0, 1],
+  },
+  {
+    username: "Mitri",
+    email: "mitri@frontendsimplified.com",
+    password: "mitri123",
+    subscrptionStatus: "VIP",
+    discordId: "Mitri#0001",
+    lessonsCompleted: [0, 1, 2, 3],
+  },
 ];
 
 function login(email, password) {
-     for (let i = 0; i < users.length; ++i) {
-          if (users[i].email === email) {
-               console.log(users[i]);
-               if (users[i].password === password) {
-                    console.log('log the user in - the details are correct')
-               }
-               else {
-                    console.log('password is incorrect - try again')
-               }
-               return;
-          }
-     }
-     console.log('could not find an email that matches')
+  for (let i = 0; i < users.length; ++i) {
+    if (users[i].email === email) {
+      console.log(users[i]);
+      if (users[i].password === password) {
+        console.log("log the user in - the details are correct");
+      } else {
+        console.log("password is incorrect - try again");
+      }
+      return;
+    }
+  }
+  console.log("could not find an email that matches");
 }
 
-login('thisdoesntexist@frontendsimplified.com', 'wrong password')
-
-
+login("thisdoesntexist@frontendsimplified.com", "wrong password");
 
 /**
  * Create a register function that accepts:
@@ -479,8 +472,43 @@ login('thisdoesntexist@frontendsimplified.com', 'wrong password')
  * -subscriptionStatus
  * -discordId
  * -lessonCompleted
- * 
+ *
  * Inside your register function:
  * 1. Create a user object
  * 2. Push this user object onto the 'users' array
  */
+
+function register(user){
+ /*  clean it up by getting rid of all the below code and set function as above
+
+  name,
+  email,
+  password,
+  subscrptionStatus,
+  discordId,
+  lessonsCompleted
+) {
+     let user = {
+          username: name,
+          email: email,
+          password: password,
+          subscrptionStatus: subscrptionStatus,
+          discordId: discordId,
+          lessonsCompleted: lessonsCompleted
+     }
+     users.push(user);
+}*/
+users.push(user);
+}
+
+register({ 
+     username: "Zen",
+     email: "zen@frontendsimplified.com",
+     password: "zen123",
+     subscrptionStatus: "VIP",
+     discordId: "Zen#001",
+     lessonsCompleted: [0, 1, 2]
+}
+);
+
+console.log(users);
