@@ -420,7 +420,7 @@ welcomePersonToFES('John' , 'Doe')
  *        and another {} after the first object before the closing brackets
  */
 
-let users = [
+/**let users = [
   {
     username: "Robert",
     email: "robert@frontendsimplified.com",
@@ -478,7 +478,7 @@ login("thisdoesntexist@frontendsimplified.com", "wrong password");
  * 2. Push this user object onto the 'users' array
  */
 
-function register(user){
+//function register(user){
  /*  clean it up by getting rid of all the below code and set function as above
 
   name,
@@ -498,7 +498,7 @@ function register(user){
      }
      users.push(user);
 }*/
-users.push(user);
+/*users.push(user);
 }
 
 register({ 
@@ -512,3 +512,24 @@ register({
 );
 
 console.log(users);
+*/
+
+/*
+DOM practice
+*/
+
+//  First way of accessing an element
+//console.log(document.querySelector('#title'));
+
+// Second way of accessing an element
+//console.log(document.getElementById('title'))
+//Change HTML
+document.querySelector('.title').innerHTML = 'Frontend Simplified'
+
+//Change CSS
+document.querySelector('.title').style.fontSize = '10px'
+
+function changeTitleToRed() {
+     document.querySelector('.title').style.color = 'red';
+     console.log('clicked')
+}
