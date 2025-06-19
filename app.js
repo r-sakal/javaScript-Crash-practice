@@ -558,11 +558,53 @@ console.log(emailRef);
 
 
  // 2. Async/Await
- async function main() {
-     const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
-     const data = await response.json()
-     console.log(data)
-     emailRef.innerHTML = data.email
- }
+//  async function main() {
+//      const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+//      const data = await response.json()
+//      console.log(data)
+//      emailRef.innerHTML = data.email
+//  }
 
- main();
+//  main();
+
+
+// Creating a promise for example
+const statusRef = document.querySelector('.status')
+
+function getSubscriptionStatus() {
+     return new Promise((resolve, reject) => {
+          setTimeout(() => {
+
+          }, 2000);
+          resolve("VIP")
+     })
+}
+
+// // 1. Then
+// getSubscriptionStatus().then(response => console.log(response))
+
+// // 2. Async/Await
+// async function main() {
+//      const status = (await getSubscriptionStatus())
+//      console.log(await getSubscriptionStatus())
+//      statusRef.innerHTML = status;
+// }
+
+// main();
+
+/**
+ * 1. Create a function called 'getVideo'
+ * 2. Accept a parameter called 'subscriptionStatus'
+ * 3. Return a new Promise inside of the function that:
+ *        -if "VIP" resolve("show video")
+ *        -if "Free" resolve("show trailer")
+ *        -if otherwise reject("no video")
+ * 4. console.log the result of getVideo(status) in main()
+ */
+
+async function main() {
+          const status = (await getSubscriptionStatus())
+          statusRef.innerHTML = status;
+}
+
+main();
