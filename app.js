@@ -479,7 +479,7 @@ login("thisdoesntexist@frontendsimplified.com", "wrong password");
  */
 
 //function register(user){
- /*  clean it up by getting rid of all the below code and set function as above
+/*  clean it up by getting rid of all the below code and set function as above
 
   name,
   email,
@@ -524,12 +524,45 @@ DOM practice
 // Second way of accessing an element
 //console.log(document.getElementById('title'))
 //Change HTML
-document.querySelector('.title').innerHTML = 'Frontend Simplified'
+//document.querySelector('.title').innerHTML = 'Frontend Simplified'
 
 //Change CSS
-document.querySelector('.title').style.fontSize = '10px'
+//document.querySelector('.title').style.fontSize = '10px'
 
-function changeTitleToRed() {
-     document.querySelector('.title').style.color = 'red';
-     console.log('clicked')
-}
+//function changeTitleToRed() {
+//   document.querySelector('.title').style.color = 'red';
+// console.log('clicked')
+//}
+
+//PROMISES
+//fetch("https://jsonplaceholder.typicode.com/users/1")
+const emailRef = document.querySelector(".email");
+console.log(emailRef);
+
+// 1. Then
+//fetch("https://jsonplaceholder.typicode.com/users/1").then((response) => {
+//response.json().then((data) => {
+//console.log(data);
+//emailRef.innerHTML = data.email;
+//});
+//});
+//cleaned up version removing a .then from inside a .then statement
+//fetch("https://jsonplaceholder.typicode.com/users/1")
+  //.then((response) => {
+    //return response.json();
+ // })
+  //.then((data) => {
+    //console.log(data);
+   // emailRef.innerHTML = data.email
+ // });
+
+
+ // 2. Async/Await
+ async function main() {
+     const response = await fetch("https://jsonplaceholder.typicode.com/users/1")
+     const data = await response.json()
+     console.log(data)
+     emailRef.innerHTML = data.email
+ }
+
+ main();
